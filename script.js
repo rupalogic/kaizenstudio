@@ -17,7 +17,7 @@ updateHarga();
 paket.addEventListener('change', updateHarga);
 
 function buildWA(){
-  const nomor = '6289686831211';
+  const nomor = '6282120302590';
   const pesan = `Halo Kaizen Studio,%0A%0ASaya ingin booking:%0A- Paket: ${paket.options[paket.selectedIndex].text}%0A- Background: ${bg.value}%0A- Jadwal: ${dt.value || '(pilih belakangan)'}%0A%0AEstimasi harga: ${harga.textContent}.`;
   waBtn.href = `https://wa.me/${nomor}?text=${pesan}`;
 }
